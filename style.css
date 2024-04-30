@@ -66,3 +66,8 @@ nav{
     margin-left: 70px;
     align-items: center;
 }
+
+.botoes:hover{
+    border: solid 2px #fff;
+    transition: 0.3s ease-in-out;
+}
