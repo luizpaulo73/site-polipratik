@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #fff;
+}
+
+header{
+    background-color: #000;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.imagem{
+    width: 10%;
+}
+
+.links{
+    align-items: center;
+    display: flex;
+}
+
+.produto-orcamento{
+    display: flex;
+    gap: 50px;
+    text-decoration: none;
+    align-items: center;
+}
+
+
+ul{
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+}
+
+ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+nav{
+    display: flex;
+    padding: 0;
+
+    li{
+        font-size: 30px;
+        font-weight: bold;
+        font-family: "Ubuntu" , sans-serif;
+    }
+    
+    img{
+        width: 50%;
+    }
+}
+
+.redes-sociais{
+    display: flex;
+    gap: -10px;
+    margin-left: 70px;
+    align-items: center;
+}
