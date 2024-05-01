@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js" defer></script>
     <title>Página Inicial</title>
   </head>
   <body>
@@ -17,12 +18,27 @@
               <li><button href="#" class="botoes">Orçamento</button></li>
             </div>
             <div class="redes-sociais">
-              <li><img src="./img/whatsapp.png" alt="Whatsapp"/></li>
-              <li><img src="./img/facebook.png" alt="Facebook"/></li>
+              <li><img src="./img/whatsapp.png" alt="Whatsapp" /></li>
+              <li><img src="./img/facebook.png" alt="Facebook" /></li>
             </div>
           </ul>
         </nav>
       </div>
     </header>
+
+    <main>
+      <div class="imagem-comparacao">
+        <div class="imagem-container">
+          <img class="antes-imagem" src="./img/before.jpg" alt="" />
+          <img class="depois-imagem" src="./img/after.jpg" alt="" />
+
+          <div class="slider-line"></div>
+          <div class="slider-icon">
+            <img src="./img/logo-polipratik-fundo-branco.png" alt="" />
+          </div>
+          <input type="range" class="slider" min="0" max="100">
+        </div>
+      </div>
+    </main>
   </body>
 </html>

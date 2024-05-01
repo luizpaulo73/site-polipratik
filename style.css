@@ -99,3 +99,56 @@ nav{
 
     }
 }
+
+/* SLIDER COMPARISION */
+
+.imagem-comparacao{
+    max-width: 700px;
+    margin: 40px auto;
+    overflow: hidden;
+
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: left;
+    }
+}
+
+.imagem-comparacao .imagem-container{
+    position: relative;
+    display: flex;
+
+    .antes-imagem{
+        position: absolute;
+        top: 0;
+        width: 50%;
+    }
+}
+
+.imagem-comparacao .slider{
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+}
+
+.imagem-comparacao {
+    
+    
+    .slider-line{
+        position: absolute;
+        height: 100%;
+        width: 4px;
+        background-color: #fff;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .slider-icon{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        width: 12%;
+        transform: translate(-50%,-50%);
+    }
+}
