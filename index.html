@@ -9,7 +9,11 @@
   </head>
   <body>
     <header>
-      <img src="./img/logo-polipratik-fundo-branco.png" alt="" class="imagem" />
+      <img
+        src="./img/logo-polipratik-fundo-branco.png"
+        alt="Logo PK"
+        class="logo"
+      />
       <div class="links">
         <nav>
           <ul>
@@ -18,8 +22,20 @@
               <li><button href="#" class="botoes">Orçamento</button></li>
             </div>
             <div class="redes-sociais">
-              <li><img src="./img/whatsapp.png" alt="Whatsapp" /></li>
-              <li><img src="./img/facebook.png" alt="Facebook" /></li>
+              <li>
+                <a
+                  href="https://api.whatsapp.com/send?phone=5511952291222&text=Ol%C3%A1,%20gostaria%20de%20fazer%20um%20or%C3%A7amento."
+                  target="_blank"
+                  ><img src="./img/whatsapp.png" alt="Whatsapp"
+                /></a>
+              </li>
+              <li>
+                <a
+                  href="https://www.facebook.com/polipratik?locale=pt_BR"
+                  target="_blank"
+                  ><img src="./img/facebook.png" alt="Facebook"
+                /></a>
+              </li>
             </div>
           </ul>
         </nav>
@@ -27,18 +43,49 @@
     </header>
 
     <main>
-      <div class="imagem-comparacao">
-        <div class="imagem-container">
-          <img class="antes-imagem" src="./img/before.jpg" alt="" />
-          <img class="depois-imagem" src="./img/after.jpg" alt="" />
+        <div class="imagem-comparacao">
+          <div class="imagem-container">
+            <img class="antes-imagem" src="./img/before.jpg" alt="Antes" />
+            <img class="depois-imagem" src="./img/after.jpg" alt="Depois" />
 
-          <div class="slider-line"></div>
-          <div class="slider-icon">
-            <img src="./img/logo-polipratik-fundo-branco.png" alt="" />
+            <div class="slider-line"></div>
+            <div class="slider-icon">
+              <img src="./img/logo-polipratik-fundo-branco.png" alt="Logo PK" />
+            </div>
+            <input type="range" class="slider" min="0" max="100" />
           </div>
-          <input type="range" class="slider" min="0" max="100">
+        </div>
+    </main>
+
+    <footer class="rodape">
+      <div class="endereco">
+        <p>PolipratiK Revestimentos</p>
+        <p>Centro Logistico</p>
+        <p>Rua 2 de Janeiro 306</p>
+        <p>Vila Salete São Paulo</p>
+      </div>
+      <div class="meio-footer">
+        <img src="./img/logo-polipratik-branco.png" alt="Polipratik Logo" />
+        <p>PolipratiK desde 2013</p>
+      </div>
+      <div class="redes">
+        <p>Siga Nossas Redes</p>
+        <div class="facebook">
+          <a
+            href="https://www.facebook.com/polipratik?locale=pt_BR"
+            target="_blank"
+          >
+            <img src="./img/facebook.png" alt="Facebook"
+          /></a>
+          <p>Facebook</p>
+        </div>
+        <div class="instagram">
+          <a href="https://www.instagram.com/polipratik/" target="_blank">
+            <img src="./img/instagram.png" alt="Instagram"
+          /></a>
+          <p>Instagram</p>
         </div>
       </div>
-    </main>
+    </footer>
   </body>
 </html>
