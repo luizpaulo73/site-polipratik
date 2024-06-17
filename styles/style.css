@@ -1,0 +1,538 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+
+}
+
+header{
+    background-color: #000;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    scroll-behavior: smooth;
+}
+
+#loading-screen {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    animation: fade-out .4s 1 ease-out forwards;
+    animation-delay: 2s;
+}
+
+@keyframes fade-out{
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+.loader{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.grade{
+    position: absolute;
+    width: 11%;
+}
+
+.placa{
+    position: absolute;
+    z-index: 999;
+    animation: loading 1 2.5s ease-out;
+    width: 10%;
+}
+
+@keyframes loading{
+    0%{
+        transform: translateX(-100vw);
+    }
+    70%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+
+#content {
+    display: none;
+}
+
+.whatsapp-fixed{
+    position: fixed;
+    width: 70px;
+    height: 70px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #25d366;
+    color: white;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 40px;
+    box-shadow: 1px 1px 2px #888;
+    z-index: 1000;
+}
+
+.fa-whatsapp{
+    margin-top: 16px;
+}
+
+.logo{
+    width: 15%;
+    height: 15%;
+    padding: 10px;
+    display: flex;
+}
+
+.links{
+    align-items: center;
+    display: flex;
+}
+
+.produto-orcamento{
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+
+    a{
+        color: #fff;
+        width: 170px;
+        height: 100px;
+        font-size: 30px;
+        font-family: "Ubuntu" , sans-serif;
+        font-weight: bold
+    }
+}
+
+.botoes{
+    cursor: pointer;
+    position: relative;
+    margin-left: 60px;
+}
+
+.botoes::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 0.175rem;
+    left: 0;
+    bottom: 0;
+    background-color: #fff;
+    transform: scale(0,1);
+    transition: transform 0.3s;
+}
+
+.botoes:hover::after{
+    transform: scale(1,1);
+}
+
+ul{
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+}
+
+ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+nav{
+    display: flex;
+    padding: 0;
+
+    .link-redes{
+        width: 50%;
+    }
+}
+
+.redes-sociais{
+    display: flex;
+    gap: -10px;
+    margin-left: 70px;
+    align-items: center;
+
+    li{
+        cursor: pointer;
+
+    }
+}
+
+/* SLIDER COMPARISION */
+.imagem-comparacao{
+    max-width: 700px;
+    margin: 40px auto;
+    overflow: hidden;
+
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: left;
+        border-radius: 10px;
+    }
+}
+
+.imagem-comparacao .imagem-container{
+    position: relative;
+    display: flex;
+
+    .antes-imagem{
+        position: absolute;
+        top: 0;
+        width: 50%;
+    }
+}
+
+.imagem-comparacao .slider{
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.imagem-comparacao {
+  
+    .slider-line{
+        position: absolute;
+        height: 100%;
+        width: 4px;
+        background-color: #fff;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .slider-icon{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        width: 12%;
+        transform: translate(-50%,-50%);
+    }
+}
+
+/* SLIDER GRISS */
+.imagem-comparacao-griss{
+    max-width: 700px;
+    margin: 40px auto;
+    overflow: hidden;
+
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: left;
+        border-radius: 10px;
+    }
+}
+
+.imagem-comparacao-griss .imagem-container-griss{
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+
+    .antes-imagem-griss{
+        position: absolute;
+        top: 0;
+        width: 50%;
+    }
+}
+
+.imagem-comparacao-griss .slider-griss{
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.imagem-comparacao-griss{
+  
+    .slider-line-griss{
+        position: absolute;
+        height: 100%;
+        width: 4px;
+        background-color: #fff;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .slider-icon-griss{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        width: 12%;
+        transform: translate(-50%,-50%);
+    }
+}
+
+
+/* SLIDER PRIVE */
+.imagem-comparacao-prive{
+    max-width: 700px;
+    margin: 40px auto;
+    overflow: hidden;
+
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: left;
+        border-radius: 10px;
+    }
+}
+
+.imagem-comparacao-prive .imagem-container-prive{
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+
+    .antes-imagem-prive{
+        position: absolute;
+        top: 0;
+        width: 50%;
+    }
+}
+
+.imagem-comparacao-prive .slider-prive{
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.imagem-comparacao-prive{
+  
+    .slider-line-prive{
+        position: absolute;
+        height: 100%;
+        width: 4px;
+        background-color: #fff;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .slider-icon-prive{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        width: 12%;
+        transform: translate(-50%,-50%);
+    }
+}
+
+/* SLIDER COMMERCE */
+.imagem-comparacao-commerce{
+    max-width: 700px;
+    margin: 40px auto;
+    overflow: hidden;
+
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: left;
+        border-radius: 10px;
+    }
+}
+
+.imagem-comparacao-commerce .imagem-container-commerce{
+    position: relative;
+    display: flex;
+
+    .antes-imagem-commerce{
+        position: absolute;
+        top: 0;
+        width: 50%;
+    }
+}
+
+.imagem-comparacao-commerce .slider-commerce{
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.imagem-comparacao-commerce{
+  
+    .slider-line-commerce{
+        position: absolute;
+        height: 100%;
+        width: 4px;
+        background-color: #fff;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .slider-icon-commerce{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        width: 12%;
+        transform: translate(-50%,-50%);
+    }
+}
+
+.dica{
+    text-align: center;
+    margin-top: -30px;
+    font-family: "Ubuntu" , sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: red;
+}
+
+.vantagens{
+    gap: 20px;
+}
+
+.titulo-vantagem{
+    font-family: "Ubuntu" , sans-serif;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 150px 0 150px 0;
+}
+
+.tipo-vantagem{
+    font-family: "Ubuntu" , sans-serif;
+    display: flex;
+    margin: 0 40px 0 40px;
+    justify-content: space-around;
+    
+    li h2{
+        font-size: 40px;
+    }
+}
+
+.lista-vantagens{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    list-style: circle;
+}
+
+.conheca-produto{
+    font-family: "Ubuntu" , sans-serif;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.seta{
+    display: flex;
+    justify-content: center;
+    margin-top: -25px;
+
+    img{
+        width: 4%;
+    }
+}
+
+.titulo-placas{
+    text-align: center;
+    font-family: "Ubuntu" , sans-serif;
+    font-size: 50px;
+    margin-bottom: 40px;
+}
+
+.p-placas{
+    text-align: justify;
+    font-family: "Ubuntu" , sans-serif;
+    font-size: 25px;
+}
+
+#griss{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#prive{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#commerce{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/* FOOTER */
+.rodape{
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    font-family: "Ubuntu" , sans-serif;
+    font-weight: bold;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 15px;
+    padding-bottom: 15px;
+}
+
+.meio-footer{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+
+    img{
+        width: 70%;
+    }
+}
+
+.redes{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    
+    a{
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    img{
+        width: 35%;
+    }
+
+    .facebook , .instagram{
+        display: flex;
+        align-items: center;
+        gap: 0;
+    }
+}

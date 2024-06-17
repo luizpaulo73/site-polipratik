@@ -3,89 +3,260 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style.css" />
-    <script src="./script.js" defer></script>
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
+    />
+    <link rel="icon" href="./img/logo-polipratik-fundo-branco.png" />
+    <script src="./js/script.js" defer></script>
     <title>Página Inicial</title>
   </head>
   <body>
-    <header>
-      <img
-        src="./img/logo-polipratik-fundo-branco.png"
-        alt="Logo PK"
-        class="logo"
-      />
-      <div class="links">
-        <nav>
-          <ul>
-            <div class="produto-orcamento">
-              <li><button href="#" class="botoes">Produto</button></li>
-              <li><button href="#" class="botoes">Orçamento</button></li>
-            </div>
-            <div class="redes-sociais">
-              <li>
-                <a
-                  href="https://api.whatsapp.com/send?phone=5511952291222&text=Ol%C3%A1,%20gostaria%20de%20fazer%20um%20or%C3%A7amento."
-                  target="_blank"
-                  ><img src="./img/whatsapp.png" alt="Whatsapp"
-                /></a>
-              </li>
-              <li>
-                <a
-                  href="https://www.facebook.com/polipratik?locale=pt_BR"
-                  target="_blank"
-                  ><img src="./img/facebook.png" alt="Facebook"
-                /></a>
-              </li>
-            </div>
-          </ul>
-        </nav>
+    <!-- comentar isso antes de codar vvvvvvvvvvv -->
+    <div id="loading-screen">
+      <div class="loader">
+        <img src="./img/logo-polipratik-placa.png" alt="" class="placa" />
+        <img src="./img/logo-polipratik-grade.png" alt="" class="grade" />
       </div>
-    </header>
+    </div>
+    <div id="content">
+      <a
+        class="whatsapp-fixed"
+        href="https://api.whatsapp.com/send?phone=5511952291222&text=Ol%C3%A1,%20gostaria%20de%20fazer%20um%20or%C3%A7amento."
+        target="_blank"
+        ><i class="fa fa-whatsapp"></i
+      ></a>
+      <header>
+        <img src="./img/logo-transparente.png" alt="Logo PK" class="logo" />
+        <div class="links">
+          <nav>
+            <ul>
+              <li class="produto-orcamento">
+                <ul>
+                  <li><a href="#griss" class="botoes">Produtos</a></li>
+                  <li>
+                    <a href="./pages/orcamento.html" class="botoes"
+                      >Orçamento</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="redes-sociais">
+                <ul>
+                  <li>
+                    <a
+                      href="https://api.whatsapp.com/send?phone=5511952291222&text=Ol%C3%A1,%20gostaria%20de%20fazer%20um%20or%C3%A7amento."
+                      target="_blank"
+                      ><img
+                        src="./img/whatsapp.png"
+                        alt="Whatsapp"
+                        class="link-redes"
+                    /></a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.facebook.com/polipratik?locale=pt_BR"
+                      target="_blank"
+                      ><img
+                        src="./img/facebook.png"
+                        alt="Facebook"
+                        class="link-redes"
+                    /></a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
 
-    <main>
-        <div class="imagem-comparacao">
+      <main>
+        <!-- <div class="imagem-comparacao">
           <div class="imagem-container">
             <img class="antes-imagem" src="./img/before.jpg" alt="Antes" />
             <img class="depois-imagem" src="./img/after.jpg" alt="Depois" />
-
             <div class="slider-line"></div>
             <div class="slider-icon">
               <img src="./img/logo-polipratik-fundo-branco.png" alt="Logo PK" />
             </div>
             <input type="range" class="slider" min="0" max="100" />
           </div>
-        </div>
-    </main>
+        </div> -->
 
-    <footer class="rodape">
-      <div class="endereco">
-        <p>PolipratiK Revestimentos</p>
-        <p>Centro Logistico</p>
-        <p>Rua 2 de Janeiro 306</p>
-        <p>Vila Salete São Paulo</p>
-      </div>
-      <div class="meio-footer">
-        <img src="./img/logo-polipratik-branco.png" alt="Polipratik Logo" />
-        <p>PolipratiK desde 2013</p>
-      </div>
-      <div class="redes">
-        <p>Siga Nossas Redes</p>
-        <div class="facebook">
-          <a
-            href="https://www.facebook.com/polipratik?locale=pt_BR"
-            target="_blank"
-          >
-            <img src="./img/facebook.png" alt="Facebook"
-          /></a>
-          <p>Facebook</p>
+        <div class="vantagens">
+          <div class="titulo-vantagem">
+            <h1>A Placa PolipratiK aplicada ao</h1>
+            <h1>portão oferece várias vantagens:</h1>
+          </div>
+          <ul class="tipo-vantagem">
+            <li>
+              <h2>Privacidade com Visão da Rua:</h2>
+              <ul class="lista-vantagens">
+                <li>
+                  Quem está na rua não consegue ver o que acontece dentro da sua
+                  casa.
+                </li>
+                <li>
+                  Ao mesmo tempo, você consegue ver o que se passa do lado
+                  externo.
+                </li>
+                <li>
+                  Especialmente útil para identificar visitantes ou entregas sem
+                  precisar abrir o portão.
+                </li>
+              </ul>
+            </li>
+            <li>
+              <h2>Instalação Limpa e Rápida:</h2>
+              <ul class="lista-vantagens">
+                <li>
+                  A aplicação da Placa PolipratiK não compromete a estética da
+                  sua fachada.
+                </li>
+                <li>
+                  O processo é rápido e não causa transtornos durante a
+                  instalação
+                </li>
+              </ul>
+            </li>
+          </ul>
         </div>
-        <div class="instagram">
-          <a href="https://www.instagram.com/polipratik/" target="_blank">
-            <img src="./img/instagram.png" alt="Instagram"
-          /></a>
-          <p>Instagram</p>
+        <h1 class="conheca-produto">Conheca os nossos Produtos</h1>
+        <a href="#griss" class="seta"
+          ><img src="./img/seta.png" alt="Seta Para Rolagem"
+        /></a>
+
+        <section id="griss">
+          <div class="info">
+            <h1 class="titulo-placas">PolipratiK Griss</h1>
+            <p class="p-placas">Privacidade em seu portão vazado com</p>
+            <p class="p-placas">aplicação de placa de forma simples e rápida</p>
+          </div>
+          <div class="div-comparacao">
+            <div class="imagem-comparacao-griss">
+              <div class="imagem-container-griss">
+                <img
+                  class="antes-imagem-griss"
+                  src="./img/before.jpg"
+                  alt="Antes"
+                />
+                <img
+                  class="depois-imagem-griss"
+                  src="./img/after.jpg"
+                  alt="Depois"
+                />
+                <div class="slider-line-griss"></div>
+                <div class="slider-icon-griss">
+                  <img
+                    src="./img/logo-polipratik-fundo-branco.png"
+                    alt="Logo PK"
+                  />
+                </div>
+                <input type="range" class="slider-griss" min="0" max="100" />
+              </div>
+            </div>
+            <p class="dica">Arraste</p>
+          </div>
+        </section>
+
+        <section id="prive">
+          <div class="div-comparacao">
+            <div class="imagem-comparacao-prive">
+              <div class="imagem-container-prive">
+                <img
+                  class="antes-imagem-prive"
+                  src="./img/before.jpg"
+                  alt="Antes"
+                />
+                <img
+                  class="depois-imagem-prive"
+                  src="./img/after.jpg"
+                  alt="Depois"
+                />
+                <div class="slider-line-prive"></div>
+                <div class="slider-icon-prive">
+                  <img
+                    src="./img/logo-polipratik-fundo-branco.png"
+                    alt="Logo PK"
+                  />
+                </div>
+                <input type="range" class="slider-prive" min="0" max="100" />
+              </div>
+            </div>
+            <p class="dica">Arraste</p>
+          </div>
+          <div class="info">
+            <h1 class="titulo-placas">PolipratiK Prive</h1>
+            <p class="p-placas">Privacidade total em qualquer condição</p>
+            <p class="p-placas">de luz ou ambiente</p>
+          </div>
+        </section>
+
+        <section id="commerce">
+          <div class="info">
+            <h1 class="titulo-placas">PolipratiK Commerce</h1>
+            <p class="p-placas">Transforme o portão de seu negocio</p>
+            <p class="p-placas">em um painel de publicidade em poucas horas</p>
+          </div>
+          <div class="div-comparacao">
+            <div class="imagem-comparacao-commerce">
+              <div class="imagem-container-commerce">
+                <img
+                  class="antes-imagem-commerce"
+                  src="./img/before.jpg"
+                  alt="Antes"
+                />
+                <img
+                  class="depois-imagem-commerce"
+                  src="./img/after.jpg"
+                  alt="Depois"
+                />
+                <div class="slider-line-commerce"></div>
+                <div class="slider-icon-commerce">
+                  <img
+                    src="./img/logo-polipratik-fundo-branco.png"
+                    alt="Logo PK"
+                  />
+                </div>
+                <input type="range" class="slider-commerce" min="0" max="100" />
+              </div>
+            </div>
+            <p class="dica">Arraste</p>
+          </div>
+        </section>
+      </main>
+
+      <footer class="rodape">
+        <div class="endereco">
+          <p>PolipratiK Revestimentos</p>
+          <p>Centro Logistico</p>
+          <p>Rua 2 de Janeiro 306</p>
+          <p>Vila Salete São Paulo</p>
         </div>
-      </div>
-    </footer>
+        <div class="meio-footer">
+          <img src="./img/logo-polipratik-branco.png" alt="Polipratik Logo" />
+          <p>PolipratiK desde 2013</p>
+        </div>
+        <div class="redes">
+          <p>Siga Nossas Redes:</p>
+          <div class="facebook">
+            <a
+              href="https://www.facebook.com/polipratik?locale=pt_BR"
+              target="_blank"
+            >
+              <img src="./img/facebook.png" alt="Facebook"
+            /></a>
+            <p>Facebook</p>
+          </div>
+          <div class="instagram">
+            <a href="https://www.instagram.com/polipratik/" target="_blank">
+              <img src="./img/instagram.png" alt="Instagram"
+            /></a>
+            <p>Instagram</p>
+          </div>
+        </div>
+      </footer>
+    </div>
   </body>
 </html>
