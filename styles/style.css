@@ -121,6 +121,19 @@ body, html {
     background: linear-gradient(to bottom , rgba(0 , 0 , 0 , 0) 0 , rgba(255 , 255 , 255 , 0) 40% , rgba(126, 126, 126 , 0.4));
 }
 
+.titulo-parallax{
+    color: white;
+    font-family: "Ubuntu" , sans-serif;
+    font-size: 60px;
+    text-align: center;
+    background-color: black;
+}
+
+.seta-parallax{
+    display: flex;
+    justify-content: center;
+}
+
 .whatsapp-fixed{
     position: fixed;
     width: 70px;
@@ -435,8 +448,9 @@ nav{
 }
 
 .dica{
-    text-align: center;
-    margin-top: -30px;
+    display: flex;
+    justify-content: center;
+    margin: -30px;
     font-family: "Ubuntu" , sans-serif;
     font-size: 20px;
     font-weight: 700;
@@ -492,6 +506,8 @@ nav{
     }
 }
 
+
+
 .titulo-placas{
     text-align: center;
     font-family: "Ubuntu" , sans-serif;
@@ -507,6 +523,30 @@ nav{
 
 #griss{
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #F5F5F7;
+    border-radius: 30px;
+    padding: 30px;
+    margin: 30px auto;
+    width: 90vw;
+    gap: 50px;
+}
+
+.dentro-fora{
+    display: flex;
+    justify-content: space-around;
+
+    img{
+        width: 45%;
+        border-radius: 10px;
+    }
+}
+
+.separacao-griss{
+    width: 100%;
+    display: flex;
     align-items: center;
     justify-content: space-around;
 }
@@ -515,12 +555,22 @@ nav{
     display: flex;
     align-items: center;
     justify-content: space-around;
+    background-color: #F5F5F7;
+    border-radius: 30px;
+    padding: 30px;
+    margin: 30px auto;
+    width: 90vw;
 }
 
 #commerce{
     display: flex;
     align-items: center;
     justify-content: space-around;
+    background-color: #F5F5F7;
+    border-radius: 30px;
+    padding: 30px;
+    width: 90vw;
+    margin: 30px auto;
 }
 
 /* FOOTER */
