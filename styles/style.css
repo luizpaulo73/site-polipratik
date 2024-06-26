@@ -11,7 +11,7 @@ body{
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-
+    min-width: 300px;
 }
 
 header{
@@ -20,7 +20,7 @@ header{
     width: 100%;
     justify-content: space-between;
     padding: 15px;
-    height: 12vh;
+    height: 120px;
 }
 
 body, html {
@@ -101,7 +101,7 @@ body, html {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 88vh !important;
+    height: 89vh !important;
     width: 100%;
     position: relative;
     overflow: hidden;
@@ -154,8 +154,8 @@ body, html {
 }
 
 .logo{
-    padding: 10px;
-    display: flex;
+    height: 100%;
+    width: auto;
 }
 
 .links{
@@ -216,8 +216,14 @@ nav{
     padding: 0;
 
     .link-redes{
-        width: 50%;
+        width: 60px;
+        height: 60px;
+        
     }
+}
+
+#header-facebook{
+    margin-left: 30px;
 }
 
 .redes-sociais{
@@ -232,62 +238,9 @@ nav{
     }
 }
 
-/* SLIDER COMPARISION */
-.imagem-comparacao{
-    max-width: 700px;
-    margin: 40px auto;
-    overflow: hidden;
-
-    img{
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        object-position: left;
-        border-radius: 10px;
-    }
-}
-
-.imagem-comparacao .imagem-container{
-    position: relative;
-    display: flex;
-
-    .antes-imagem{
-        position: absolute;
-        top: 0;
-        width: 50%;
-    }
-}
-
-.imagem-comparacao .slider{
-    position: absolute;
-    inset: 0;
-    opacity: 0;
-    cursor: pointer;
-}
-
-.imagem-comparacao {
-  
-    .slider-line{
-        position: absolute;
-        height: 100%;
-        width: 4px;
-        background-color: #fff;
-        left: 50%;
-        transform: translateX(-50%);
-    }
-
-    .slider-icon{
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        width: 12%;
-        transform: translate(-50%,-50%);
-    }
-}
-
 /* SLIDER GRISS */
 .imagem-comparacao-griss{
-    max-width: 700px;
+    width: 65%;
     margin: 40px auto;
     overflow: hidden;
 
@@ -316,7 +269,7 @@ nav{
     position: absolute;
     inset: 0;
     opacity: 0;
-    cursor: pointer;
+    cursor: col-resize;
 }
 
 .imagem-comparacao-griss{
@@ -342,7 +295,7 @@ nav{
 
 /* SLIDER PRIVE */
 .imagem-comparacao-prive{
-    max-width: 700px;
+    width: 700px;
     margin: 40px auto;
     overflow: hidden;
 
@@ -371,7 +324,7 @@ nav{
     position: absolute;
     inset: 0;
     opacity: 0;
-    cursor: pointer;
+    cursor: col-resize;
 }
 
 .imagem-comparacao-prive{
@@ -396,7 +349,7 @@ nav{
 
 /* SLIDER COMMERCE */
 .imagem-comparacao-commerce{
-    max-width: 700px;
+    width: 700px;
     margin: 40px auto;
     overflow: hidden;
 
@@ -424,7 +377,7 @@ nav{
     position: absolute;
     inset: 0;
     opacity: 0;
-    cursor: pointer;
+    cursor: col-resize;
 }
 
 .imagem-comparacao-commerce{
@@ -476,10 +429,11 @@ nav{
     display: flex;
     margin: 0 40px 0 40px;
     justify-content: space-around;
-    
-    li h2{
-        font-size: 40px;
-    }
+    gap: 20px;
+}
+
+.h2-vantagens{
+    font-size: 40px;
 }
 
 .lista-vantagens{
@@ -499,14 +453,12 @@ nav{
 .seta{
     display: flex;
     justify-content: center;
-    margin-top: -25px;
+    margin-top: -15px;
 
     img{
         width: 4%;
     }
 }
-
-
 
 .titulo-placas{
     text-align: center;
@@ -529,17 +481,19 @@ nav{
     background-color: #F5F5F7;
     border-radius: 30px;
     padding: 30px;
+    padding-bottom: 50px;
     margin: 30px auto;
-    width: 90vw;
+    width: 92vw;
     gap: 50px;
 }
 
 .dentro-fora{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 40px;
 
     img{
-        width: 45%;
+        width: 41%;
         border-radius: 10px;
     }
 }
@@ -558,8 +512,9 @@ nav{
     background-color: #F5F5F7;
     border-radius: 30px;
     padding: 30px;
+    padding-bottom: 50px;
     margin: 30px auto;
-    width: 90vw;
+    width: 92vw;
 }
 
 #commerce{
@@ -569,8 +524,9 @@ nav{
     background-color: #F5F5F7;
     border-radius: 30px;
     padding: 30px;
-    width: 90vw;
+    width: 92vw;
     margin: 30px auto;
+    padding-bottom: 50px;
 }
 
 /* FOOTER */
@@ -617,5 +573,214 @@ nav{
         display: flex;
         align-items: center;
         gap: 0;
+    }
+}
+
+@media screen and (max-width:1700px){
+    .p-placas{
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width:1440px){
+    .p-placas{
+        font-size: 18px;
+    }
+
+    .titulo-placas{
+        font-size: 35px;
+    }
+}
+
+@media screen and (max-width:1360px){
+    .titulo-placas{
+        font-size: 35px;
+    }
+
+    .p-placas{
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width:1300px){
+    .h2-vantagens{
+        font-size: 35px;
+    }
+
+    .lista-vantagens{
+        font-size: 18px;
+    }
+
+    .p-placas{
+        display: flex;
+    }
+}
+
+@media screen and (max-width:1150px){
+    .h2-vantagens{
+        font-size: 32px;
+    }
+
+    .lista-vantagens{
+        font-size: 16px;
+    }
+
+    .titulo-vantagem{
+        font-size: 37px;
+    }
+}
+
+@media screen and (max-width:1050px){
+    .logo{
+        width: 28%
+    }
+
+    header{
+        height: 100px;
+    }
+
+    nav{
+        .link-redes{
+            width: 55px;
+            height: 55px;
+        }
+    }
+
+    .titulo-parallax{
+        font-size: 50px;
+    }
+}
+
+@media screen and (max-width:1000px){
+    .logo{
+        width: 25%;
+    }
+
+    header{
+        height: 80px;
+    }
+
+    .produto-orcamento a{
+        font-size: 24px;
+    }
+
+    nav{
+        .link-redes{
+            width: 45px;
+            height: 45px;
+        }
+    }
+}
+
+@media screen and (max-width:950px){
+    .titulo-vantagem{
+        font-size: 34px;
+    }
+
+    .h2-vantagens{
+        font-size: 25px;
+    }
+
+    .lista-vantagens{
+        font-size: 14px;
+    }
+
+    .seta{
+        margin-top: 0px;
+
+        img{
+            width: 10%;
+        }
+    }
+}
+
+@media screen and (max-width:850px){
+    .titulo-parallax{
+        font-size: 40px;
+    }
+    
+    .titulo-vantagem{
+        font-size: 28px;
+    }
+
+    .h2-vantagens{
+        font-size: 20px;
+    }
+
+    .lista-vantagens{
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width:740px){
+    .produto-orcamento a{
+        margin-left: 30px;
+        font-size: 20px;
+    }
+
+    header{
+        height: 70px;
+    }
+
+    nav{
+        .link-redes{
+            width: 35px;
+            height: 35px;
+        }
+    }
+
+    .whatsapp-fixed{
+        bottom: 20px;
+        right: 20px;
+    }
+
+    .conheca-produto{
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width:700px){
+    .tipo-vantagem{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .titulo-vantagem{
+        font-size: 24px;
+    }
+}
+
+@media screen and (max-width:600px){
+    .redes-sociais{
+        display: none;
+    }
+
+    ul{
+        display: flex;
+        justify-content: right;
+        width: auto;
+    }
+
+    .logo{
+        width: 30%;
+    }
+
+    .titulo-vantagem{
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width:550px){
+    header{
+        height: 60px;
+    }
+
+    .produto-orcamento a{
+        font-size: 17px;
+    }
+
+    .titulo-parallax{
+        font-size: 32px;
     }
 }
