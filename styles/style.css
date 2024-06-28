@@ -21,6 +21,8 @@ header{
     justify-content: space-between;
     padding: 15px;
     height: 120px;
+    position: fixed;
+    z-index: 1001;
 }
 
 body, html {
@@ -100,7 +102,7 @@ body, html {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 89vh !important;
+    height: 100vh !important;
     width: 100%;
     position: relative;
     overflow: hidden;
@@ -443,6 +445,23 @@ nav{
     list-style: circle;
 }
 
+.titulo-como-funciona{
+    font-family: "Ubuntu" , sans-serif;
+    font-size: 60px;
+    text-align: center;
+    margin: 50px 0 100px 0;
+}
+
+.infos-como-funciona{
+    text-align: center;
+    font-family: "Ubuntu" , sans-serif;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    list-style: circle;
+}
+
 .conheca-produto{
     font-family: "Ubuntu" , sans-serif;
     text-align: center;
@@ -528,6 +547,95 @@ nav{
     padding-bottom: 50px;
 }
 
+#orcamento{
+    display: flex;
+    flex-direction: column;
+    background-color: #F5F5F7;
+    border-radius: 30px;
+    padding: 30px;
+    width: 92vw;
+    margin: 30px auto;
+    gap: 40px;
+}
+
+.titulo-orcamento{
+    font-family: "Ubuntu" , sans-serif;
+    font-size: 60px;
+    text-align: center;
+}
+
+.acessar-whatsapp{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    text-decoration: none;
+    font-family: "Ubuntu" , sans-serif;
+    font-size: 35px;
+    color: white;
+    background-color: red;
+    width: 24vw;
+    height: 8vh;
+    border-radius: 20px;
+    margin: 0 auto;
+    transition: 0.5s ease;
+}
+
+.acessar-whatsapp:hover{
+    background-color: #25d366;
+}
+
+.passos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.orcamento-img{
+    width: 30vw;
+    border-radius: 20px;
+}
+
+.orcamento{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.p-orcamento{
+        text-align: center;
+        font-family: "Ubuntu" , sans-serif;
+        font-size: 40px;
+        font-weight: 700;
+    }
+
+.medida{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.medida-img{
+    width: 50vw;
+}
+
+.localizacao{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.localizacao-img{
+    width: 15vw;
+}
+
+.final{
+    margin-top: 40px;
+}
+
 /* FOOTER */
 .rodape{
     background-color: #000;
@@ -578,10 +686,29 @@ nav{
     }
 }
 
+@media screen and (max-width:1700px){
+
+    .titulo-orcamento{
+        font-size: 50px;
+    }
+
+    .acessar-whatsapp{
+        font-size: 30px;
+    }
+}
+
 @media screen and (max-width:1400px){
 
     .titulo-placas{
         font-size: 40px;
+    }
+
+    .titulo-orcamento{
+        font-size: 40px;
+    }
+
+    .p-orcamento{
+        font-size: 30px;
     }
 }
 
@@ -630,6 +757,14 @@ nav{
 
     .titulo-parallax{
         font-size: 50px;
+    }
+
+    .titulo-orcamento{
+        font-size: 35px;
+    }
+
+    .acessar-whatsapp{
+        font-size: 25px;
     }
 }
 
@@ -705,6 +840,41 @@ nav{
     .imagem-comparacao-griss , .imagem-comparacao-prive , .imagem-comparacao-commerce{
         width: 75vw;
     }
+
+    .orcamento{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .orcamento-img{
+        width: 50vw;
+    }
+
+    .medida{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .medida-img{
+        width: 70vw;
+    }
+
+    .localizacao{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .passos{
+        gap: 50px;
+    }
+
+    .titulo-orcamento{
+        font-size: 30px;
+    }
+
+    .p-orcamento{
+        font-size: 25px;
+    }
 }
 
 @media screen and (max-width:850px){
@@ -723,6 +893,17 @@ nav{
 
     .lista-vantagens{
         font-size: 12px;
+    }
+}
+
+@media screen and (max-width:800px){
+
+    .titulo-orcamento{
+        font-size: 25px;
+    }
+
+    .acessar-whatsapp{
+        font-size: 20px;
     }
 }
 
@@ -806,6 +987,22 @@ nav{
         height: 60px;
         font-size: 30px;
     }
+
+    .acessar-whatsapp{
+        width: 40vw;
+    }
+
+    .orcamento-img{
+        width: 70vw;
+    }
+
+    .medida-img{
+        width: 80vw;
+    }
+
+    .p-orcamento{
+        font-size: 20px;
+    }
 }
 
 @media screen and (max-width:550px){
@@ -822,6 +1019,13 @@ nav{
     }
 }
 
+@media screen and (max-width:470px){
+
+    .titulo-orcamento{
+        font-size: 22px;
+    }
+}
+
 @media screen and (max-width:420px){
 
     .meio-footer{
@@ -835,11 +1039,13 @@ nav{
     .redes{
         font-size: 8px;
     }
-}
-
-@media screen and (max-width:420px){
+    
     .titulo-parallax{
         font-size: 28px;
+    }
+
+    .titulo-orcamento{
+        font-size: 20px;
     }
 }
 
@@ -858,6 +1064,19 @@ nav{
     
     .meio-footer{
         gap: 20px;
+    }
+
+    .titulo-orcamento{
+        font-size: 16px;
+    }
+
+    .p-orcamento{
+        font-size: 16px;
+    }
+    
+    .acessar-whatsapp{
+        font-size: 16px;
+        height: 7vh;
     }
 }
 
