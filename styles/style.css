@@ -130,11 +130,6 @@ body, html {
     background-color: black;
 }
 
-.seta-parallax{
-    display: flex;
-    justify-content: center;
-}
-
 .whatsapp-fixed{
     position: fixed;
     width: 70px;
@@ -453,13 +448,20 @@ nav{
 }
 
 .infos-como-funciona{
-    text-align: center;
+    text-align: left;
     font-family: "Ubuntu" , sans-serif;
     margin-top: 20px;
     display: flex;
-    flex-direction: column;
     font-size: 20px;
     list-style: circle;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.fundo-como-funciona{
+    width: 60vw;
+    margin-top: 40px;
 }
 
 .conheca-produto{
@@ -570,6 +572,7 @@ nav{
     text-align: center;
     align-items: center;
     text-decoration: none;
+    font-weight: bold;
     font-family: "Ubuntu" , sans-serif;
     font-size: 35px;
     color: white;
@@ -618,7 +621,7 @@ nav{
 }
 
 .medida-img{
-    width: 50vw;
+    width: 40vw;
 }
 
 .localizacao{
@@ -658,8 +661,6 @@ nav{
 
     img{
         width: 70%;
-        display: flex;
-        justify-content: center;
     }
 }
 
@@ -721,6 +722,10 @@ nav{
     .lista-vantagens{
         font-size: 18px;
     }
+
+    .infos-como-funciona{
+        font-size: 18px;
+    }
 }
 
 @media screen and (max-width:1150px){
@@ -733,9 +738,14 @@ nav{
         font-size: 16px;
     }
 
+    .infos-como-funciona{
+        font-size: 16px;
+    }
+
     .titulo-vantagem{
         font-size: 37px;
     }
+    
 }
 
 @media screen and (max-width:1050px){
@@ -765,6 +775,10 @@ nav{
 
     .acessar-whatsapp{
         font-size: 25px;
+    }
+
+    .titulo-como-funciona{
+        margin: 50px 0 60px;
     }
 }
 
@@ -856,7 +870,7 @@ nav{
     }
 
     .medida-img{
-        width: 70vw;
+        width: 60vw;
     }
 
     .localizacao{
@@ -874,6 +888,10 @@ nav{
 
     .p-orcamento{
         font-size: 25px;
+    }
+
+    .titulo-como-funciona{
+        font-size: 50px;
     }
 }
 
@@ -893,6 +911,18 @@ nav{
 
     .lista-vantagens{
         font-size: 12px;
+    }
+
+    .infos-como-funciona{
+        font-size: 12px;
+    }
+
+    .titulo-como-funciona{
+        font-size: 42px;
+    }
+
+    .fundo-como-funciona{
+        width: 90vw;
     }
 }
 
@@ -944,6 +974,10 @@ nav{
 
     .titulo-vantagem{
         font-size: 24px;
+    }
+
+    .titulo-como-funciona{
+        font-size: 36px;
     }
 }
 
@@ -1003,6 +1037,10 @@ nav{
     .p-orcamento{
         font-size: 20px;
     }
+
+    .titulo-como-funciona{
+        font-size: 30px;
+    }
 }
 
 @media screen and (max-width:550px){
@@ -1020,9 +1058,24 @@ nav{
 }
 
 @media screen and (max-width:470px){
+    .infos-como-funciona{
+        padding: 0 5px 0 5px;
+    }
+}
+
+@media screen and (max-width:470px){
 
     .titulo-orcamento{
         font-size: 22px;
+    }
+
+    .titulo-vantagem{
+        font-size: 17px;
+        margin-bottom: 60px;
+    }
+
+    .titulo-como-funciona{
+        font-size: 25px;
     }
 }
 
@@ -1077,6 +1130,14 @@ nav{
     .acessar-whatsapp{
         font-size: 16px;
         height: 7vh;
+    }
+
+    .titulo-vantagem{
+        font-size: 14px;
+    }
+
+    .titulo-como-funciona{
+        font-size: 21px;
     }
 }
 

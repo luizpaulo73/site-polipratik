@@ -64,5 +64,5 @@ window.addEventListener('load', function() {
     setTimeout(function() {
         loadingScreen.style.display = 'none';
         content.style.display = 'block';
-    }, 2500);
+    }, 1000);
 });
