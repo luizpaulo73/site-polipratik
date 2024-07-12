@@ -50,7 +50,7 @@ body, html {
     justify-content: center;
     align-items: center;
     z-index: 9999;
-    animation: fade-out .4s 1 ease-out forwards;
+    /* animation: fade-out .4s 1 ease-out forwards; */
     animation-delay: 2s;
 }
 
@@ -68,11 +68,18 @@ body, html {
     align-items: center;
     justify-content: center;
     width: 100%;
+    flex-direction: column;
+}
+
+.portao{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 10px 10px 10px;
 }
 
 .grade{
-    position: absolute;
-    width: 11%;
+    width: 11vw;
 }
 
 .placa{
@@ -80,6 +87,27 @@ body, html {
     z-index: 999;
     animation: loading 1 2.5s ease-out;
     width: 10%;
+}
+
+.carregando{
+    font-family: "Ubuntu" , sans-serif;
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: bold;
+    opacity: 0;
+    animation: letra-fade-in infinite 2s ease-in-out 1.45s;
+}
+
+@keyframes letra-fade-in {
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
 }
 
 @keyframes loading{
@@ -780,6 +808,14 @@ nav{
     .titulo-como-funciona{
         margin: 50px 0 60px;
     }
+
+    .grade{
+        width: 22vw;
+    }
+
+    .placa{
+        width: 20%;
+    }
 }
 
 @media screen and (max-width:1000px){
@@ -1054,6 +1090,14 @@ nav{
 
     .titulo-parallax{
         font-size: 32px;
+    }
+
+    .grade{
+        width: 33vw;
+    }
+
+    .placa{
+        width: 30vw;
     }
 }
 

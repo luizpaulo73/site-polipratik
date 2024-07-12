@@ -12,6 +12,16 @@
 //     sliderIcon.style.left = sliderValue;
 // });
 
+window.addEventListener('load', function() {
+    var loadingScreen = document.getElementById('loading-screen');
+    var content = document.getElementById('content');
+
+    setTimeout(function() {
+        loadingScreen.style.display = 'none';
+        content.style.display = 'block';
+    }, 2500);
+});
+
 // SLIDER GRISS
 const sliderGriss = document.querySelector(".imagem-comparacao-griss .slider-griss");
 const beforeImageGriss = document.querySelector(".imagem-comparacao-griss .antes-imagem-griss")
@@ -55,14 +65,4 @@ sliderCommerce.addEventListener("input" , (e) => {
     beforeImageCommerce.style.width = sliderValue;
     sliderLineCommerce.style.left = sliderValue;
     sliderIconCommerce.style.left = sliderValue;
-});
-
-window.addEventListener('load', function() {
-    var loadingScreen = document.getElementById('loading-screen');
-    var content = document.getElementById('content');
-
-    setTimeout(function() {
-        loadingScreen.style.display = 'none';
-        content.style.display = 'block';
-    }, 1000);
 });
